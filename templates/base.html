@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{{ title }}</title>
+    <style type="text/css">
+        html, body {background:#000; padding:0; margin:0; width:100%; height:100%; text-align:center; overflow:hidden;font-family:"微软雅黑";font-size: 13px; } 
+    </style>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#ifrm1").css("width",$(window).width()+"px").css("height",$(window).height()+"px");
+            //$("#ifrm1").attr("src","battle_share.html?br=20140704.grec&title=hello");
+        });
+    </script>
+</head>
+<body>
+    <iframe style="width: 100%; height: 100%" frameborder="0" id="ifrm1" src="{{ longUrl}}"></iframe>
+</body>
+</html>
